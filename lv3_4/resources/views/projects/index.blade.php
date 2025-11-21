@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    <!-- Moji projekti (voditelj) -->
+                    <!-- Moji projekti -->
                     <div class="mb-8">
                         <h1 class="text-2xl font-bold text-gray-800 mb-4">Moji projekti (voditelj)</h1>
                         @forelse($moji_projekti as $proj)
@@ -27,7 +27,7 @@
                         @endforelse
                     </div>
 
-                    <!-- Projekti član -->
+                    <!-- Dodjeljeni projekti -->
                     <div class="mb-8">
                         <h1 class="text-2xl font-bold text-gray-800 mb-4">Projekti član</h1>
                         @forelse($projekti_clan as $proj)
@@ -44,7 +44,6 @@
                         @endforelse
                     </div>
 
-                    <!-- Novi projekt button -->
                     <div class="mt-6">
                         <a href="{{ route('projects.create') }}"
                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200">
